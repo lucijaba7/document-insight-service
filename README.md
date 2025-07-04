@@ -39,7 +39,7 @@ file: <yourfile.pdf>
 ```json
 {
   "session_id": "b1c2d3e4...",
-  "page_texts": ["Page 1 text", "Page 2 text", ...]
+  "page_texts": ["Page 1 text", "Page 2 text"]
 }
 ```
 
@@ -49,7 +49,7 @@ POST /ask
 Authorization: Bearer <session_token>
 Content-Type: application/x-www-form-urlencoded
 
-question=What is the main topic?
+question: What is the main topic?
 ```
 **Response:**
 ```json
@@ -85,6 +85,7 @@ question=What is the main topic?
 - **SentenceTransformers (MiniLM)**: Encodes text (chunks and questions) into dense vector embeddings.
 - **FAISS**: Builds an index over those vectors to perform fast nearest-neighbor (similarity) searches in the RAG pipeline.
 - **DistilBERT (SQuAD)**: For extractive QA over text chunks or full document.
+- **GitHub Actions**: Configured CI/CD pipelines on GitHub for automated testing
 
 ---
 
