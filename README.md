@@ -26,6 +26,8 @@ Use Docker Compose for running the app:
    docker compose up --build
    ```
 
+Access the app at: http://localhost:7860
+
 ## Example API Requests
 
 ### 1. Upload a PDF
